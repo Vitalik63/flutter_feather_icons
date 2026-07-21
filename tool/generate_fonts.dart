@@ -25,7 +25,7 @@ void main(List<String> args) {
 
   for (Map<String, dynamic> icon in icons) {
     icon.forEach((String iconName, dynamic iconUnicode) => generatedOutput.add(
-        "static const IconData ${ReCase(iconName).camelCase} = const FeatherIconData(0x$iconUnicode);\n"));
+        "static const IconData ${ReCase(iconName).camelCase} = IconData(0x$iconUnicode, fontFamily: kFeatherFontFamily, fontPackage: kFeatherFontPackage);\n"));
   }
 
   generatedOutput.add("}\n");

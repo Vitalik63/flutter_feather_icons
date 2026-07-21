@@ -1,3 +1,8 @@
+## 2.1.0
+
+- **Update**
+  - Compatible with Flutter 3.44 (`IconData` is now final; icons use `IconData` directly)
+
 ## 2.0.0
 
 - **Update**
